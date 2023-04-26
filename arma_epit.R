@@ -69,7 +69,7 @@ ARMAepit=function(egyed,Y,alpha){
   valtszignif<-prod(Valtszignifvek)
   
   #BIC
-  inform<-2*eredmeny$value+2*(sum(egyed)+1)*log(nrow(data))
+  inform<-2*eredmeny$value+(sum(egyed)+1)*log(nrow(data))
   
   
   #feherzaj
